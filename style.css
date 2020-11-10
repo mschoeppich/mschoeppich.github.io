@@ -104,6 +104,21 @@ b {
 /************************/
 
 /* Intro section styles */
+.pde_flow{
+position:relative;
+display:block;
+width: 100%;
+height: 200px;
+overflow: hidden;
+  top: 0;
+  right:0 ;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+		overflow: none;
+
+}
 
 .Hi {
     max-width: 74rem;
