@@ -1,446 +1,330 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
 
 <head>
-	<title>Megan's Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+
+	<!-- 
+		
+                                    Yo, Bretheren. 
+                                    This template is made by me, with the intention of providing people who are starting out in web development
+                                    with a simplistic, minimal website to get themselves up online and displaying their projects.
+                                    You will find that every section is commented and explains in brief what it does.
+                                    It was created out of the goodness of my heart. <3
+                                    By all means use this for your own projects, pull it apart, edit it.. claim it as your own work if you want to. However
+                                    I please ask you don't resell it.
+                                    If you do, I will find you.. and I will kill you.
+                                    Slowly.
+									                  Have a splendid day.
+                                    James x
+                                    
+                                    AKA The Countryside Coder
+                                          .--..--..--..--..--..--.
+                                        .' \  (`._   (_)     _   \
+                                      .'    |  '._)         (_)  |
+                                      \ _.')\      .----..---.   /
+                                      |(_.'  |    /    .-\-.  \  |
+                                      \     0|    |   ( O| O) | o|
+                                       |  _  |  .--.____.'._.-.  |
+                                       \ (_) | o         -` .-`  |
+                                        |    \   |`-._ _ _ _ _\ /
+                                        \    |   |  `. |_||_|   |
+                                        | o  |    \_      \     |     -.   .-.
+                                        |.-.  \     `--..-'   O |     `.`-' .'
+                                      _.'  .' |     `-.-'      /-.__   ' .-'
+                                    .' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
+                                    `-._  `.  |________/\_____|    `-.'
+                                       .'   ).| '=' '='\/ '=' |
+                                       `._.`  '---------------'
+                                               //___\   //___\
+                                                 ||       ||
+                                                 ||_.-.   ||_.-.
+                                                (_.--__) (_.--__)                               
+        -->
+
+	<!-- The boring part! -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My First Portfolio</title>
+	<meta content="Development portfolio of .... " name="description" property="og:description">
+	
+	<!-- Link to the relevant stylesheet -->
+	<link href="style.css" rel="stylesheet">
+	
+  <!--[if lte IE 8]>
+      <link href="dist/css/blockIE.css" rel="stylesheet">
+    <![endif]-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> <!-- Load JQuery, as our little script depends on it -->
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,600,400" rel="stylesheet" type="text/css"> <!-- Load our font from Google -->
+  <!-- The JS code block has been moved into the index.js file.  -->
+  <script src="./index.js"></script>
 </head>
 
-<body class="is-preload">
+<body>
+	<!-- This calls the little script written above. -->
+  <div class="preloader"></div>
+  <main>
+
+	<!-- The Intro section begins -->
+  <section class="intro">
+
+		<div class="intro-text"> <!-- Seperates the text section from the arrow. -->
+      <div class="Hi">
+				<h1>Hi! 👋  &mdash; My name is <span>James</span>, I'm a <span>developer</span> 👨🏻‍💻 located in Berkshire, UK.</h1> <!-- Insert your text here! -->
+      </div>
+    </div>
+    
+	</section>
+	<!-- Intro section ends -->
+	
+	<!-- The portfolio section begins -->
+  <!-- Please note: all of the following images are from Unsplash. I do not own the rights to them, and I have used them according to Unsplash's
+    href="https://www.github.com/jabedford"
+				rules and regulations. All credits go to original owners/photographers.-->
+
+  <section class="projects">
+    <div class="projects-collage">
+
+			<!-- Project One -->
+      <a class="project-item"  target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1491931648265-8f68c1dc731b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=717ea0ca5595686d6311578a5b010861&auto=format&fit=crop&w=1050&q=80">
+          <figcaption class="project-text">
+            <h2>Project One</h2>
+            <p>Awesome Development</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> PROJECT ONE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project One Ends -->
 			
-	<iframe class="pde_flow" src="https://editor.p5js.org/megschoeppich/embed/MbijPYo5Y"></iframe>
-	<!-- Wrapper -->
-	<div id="wrapper">
+			<!-- Project Two -->
+      <a class="project-item" target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1481456384069-0effc539ab7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e82bb43d4428126504304646c8c6ed4&auto=format&fit=crop&w=1050&q=80">
+          <figcaption class="project-text">
+            <h2>Project Two</h2>
+            <p>Awesome Development</p>
+            <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
 
-		<!-- Header -->
-		<header id="header">
-			<div class="content">
-				<div class="inner">
-					<h1> Megan Schoeppich</h1>
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
 
-				</div>
-			</div>
-			<nav>
-				<ul>
-					<li><a href="#about">about</a></li>
-					<li><a href="#art">artwork</a></li>
-					<li><a href="#design">designwork</a></li>
-					<li><a href="#exhibit">exhibitions</a></li>
-					<!--<li><a href="#elements">Elements</a></li>-->
-				</ul>
-			</nav>
-		</header>
+           <p class='hidden popUpdesc'> PROJECT TWO Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
 
-		<!-- Main -->
-		<div id="main">
-
-			<!-- Intro -->
-
-
-			<article id="about">
-				<h2 class="major">about</h2>
-				<span class="image main"><img src="images/meg_profile_wide.jpg" alt="" /></span>
-
-				<p>A collaborator, technologist and artist based in Toronto. </p>
-				
-				<p>Enthusiastic about knowledge-sharing, accessible design practices and maker cultures. Knowledgeable with digital fabrication tools, 2D design and motion 
-					compositions, tangible electronic media and generative code-based art. </p>
-
-				<p>My art explores the hierarchical relationships present in transformations of matter into form.
-					I have found a strong interest in building interactive kinetic sculptures in addition to algorithmically-generated, screen-based work.
-					I create mirrors through which I am able to better understand and meaningfully respond to the essence of relational hierarchies.</p>
-				<p>Want to look at my <a href="images/CV_SEP2020.pdf">CV</a>?</p>
-
-			</article>
-
-			<!-- Work -->
-			<article id="art">
-				<h2 class="major">artwork</h2>
-
-				<iframe class="vids" src="https://www.youtube.com/embed/bXJ7hrrW2U4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>"love; the whole, together with &separately from, the parts." is a collaboration with Anneka Muther. </p>
-				<p>We are bodies composed of forces that repel and attract.
-					Forces of attraction allow us to build connections and braid understanding.
-					Forces of repulsion encourage categorization and definition.
-					Despite this distinction, characteristics that are used to differentiate beings are the same factors that unify the beings.
-					The bodies that the forces share choose to highlight division.
-					The decision to highlight unique characteristics consequently amplifies individuality. </p>
-
-				<p>Both the forces of attraction and repulsion are needed to work in tandem to resolve their imbalance.
-					Neither force is more valuable or negligible than the other.
-					Both forces are parts of the whole.
-					By moving down the road together, the forces of attraction and repulsion reframe what already is. </p>
-				<p>March 2020.</p>
-				<p>_____________________________</p>
-
-				<a href="images/colab_documentation.png">
-					<span class="image main"><img src="images/colab_documentation.png" alt="" /></span></a>
-				<p> A node is a portion of a network through which connections are made.</p>
-				<p>"NODE" is a collaboration with Anneka Muther, Aaron Klem, Neekta Torabian and Caitlyn Fernandez
-					that is designed to invite discovery. By plucking the strings, you experience an orchestra of tactile, visual and auditory feedback.
-					Participants play off both the instrument and each other.</p>
-				<p>December 2019.</p>
-				<p>_____________________________</p>
-
-				<iframe class="vids" src="https://www.youtube.com/embed/la4TxYjtdWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>
-					Our lives and everything in the universe can be approached with two different lenses: that of specification or generalization.
-					Colonialism imports with it a system of differentiation; colonial enframing creates an intellectual divide as a self-other dualism between “society” and “nature”.
-				</p>
-				<p>"Tapestry of Healing" is a collaboration with Anneka Muther. The physical structure of the project features a round-shaped planter supporting soil,
-					plantlife, and woven material.
-					The circular base embodies notions of infinity, revolution, inclusion, and nurture.
-					Unravelled material from found discarded textiles are woven amongst plant growth.
-					The vegetation has the choice either supporting or rejecting the imposed woven structure.
-				</p>
-				<p>April 2019.</p>
-				<p>_____________________________</p>
-
-
-				<iframe class="vids" src="https://www.youtube.com/embed/st7RvWLMGZ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p> What is mathematics? A description of the world and things that occur within it?
-					Has humanity uncovered the underlying property of the universe?
-					Or has humanity merely invented it?</p>
-				<p>"Pi Playground" is a data visualization performance piece that explores the above questions.
-					Using the first million digits of pi, Anitha Nathan and I collaborated to
-					liberate pi from the constraining bounds of numerical symbolism.
-				</p>
-				<p>We did this by translating the decimal digits to hexadecimal digits,
-					and converted these translated values into RGB light through serial
-					communication from Processing to Arduino.
-					The values were additionally transformed into sound, allowing an audience to
-					perceive pi from a different perspective.
-					Overall, the experience of pi becomes more encircling and apart of our physicality.</p>
-				<p>October 2018.</p>
-
-				<p>_____________________________</p>
-
-				<iframe class="vids" src="https://www.youtube.com/embed/lfnH91vKfG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>To sit in a chair is to deprive the body of positional agency, enforcing conformation and disconnection with the sitter's body, others and environment. </p>
-				<p>"To Remind" is a chair-like object whose affordances can only be accessed through human communication and action.
-					This project invites participants to recognize the isolating effects of single-user objects.
-					This project critiques how object architectures serve the environment and the community in the long term.
-					I aimed to redesign chairs to unite people and encourage reconnections with what we have lost touch.
-
-				<p>May 2018.</p>
-				<p>_____________________________</p>
-				<iframe class="vids" src="https://www.youtube.com/embed/6_4Mvx1DSDc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>"Mind Set" is a video art peice that approaches the subject of computation as being modelled after cognitive
-					mapping processes. The brain's ability to compress information into concepts is a necessary
-					condition for human existence.
-				</p>
-				<p>Videos are frames of two-dimensional images. Rather than refreshing the image in its
-					entirety every frame, individual frames are compressed in relation to the frames
-					preceding and following them. This interframe codec overlays full reference frames
-					with partial predicted frames. This method compresses two-dimensional data in
-					three-dimensions, behaving in a way that simulates human cognition.
-				</p>
-				<p>In this sense, "Mind Set" aims to explore the origins of computation.</p>
-
-				<p>December 2017.</p>
-				<p>_____________________________</p>
-
-			</article>
-
-			<!-- About -->
-			<article id="design">
-				<h2 class="major">designwork</h2>
-                                <iframe class="vids" width="560" height="315" src="https://www.youtube.com/embed/vOAYQwryhX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>				
-				<p>A motion graphics piece promoting financial career education with My Fintelligence.</p>
-				<p>____________________________</p>
-				<a href="images/TDS_WIP_logo.png">
-					<span class="image main"><img src="images/TDS_WIP_logo.png" alt="" /></span></a>
-				<p> Iterations of a logo I designed for The Driveside, a storytelling blogspace.</p>
-				<p>____________________________</p>
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+      </figcaption>
+      </figure>
+			</a>
+			<!-- Project Two Ends -->
 			
-				<a href="images/styleguide1.png">
-					<span class="image main"><img src="images/styleguide1.png" alt="" /></span></a>
-				<p> The above style guide was designed for Project Hard Drive.</p>
-				<p>____________________________</p>
-				
-				<a href="images/biodivers.jpg">
-					<span class="image main"><img src="images/biodivers.jpg" alt="" /></span></a>
-				<p> The above image shows the logo development for the Bio Divers podcast.</p>
-				<p>____________________________</p>
-				
-				
-				<iframe class="vids" width="560" height="315" src="https://www.youtube.com/embed/synC0xiZhcs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>A motion graphic explainer video made for My Fintelligence.</p>
-				<p>____________________________</p>
-				
-				<a href="images/gallery12.png">
-					<span class="image main"><img src="images/gallery12.png" alt="" /></span></a>
-				<p> Marketing asset for an upcoming student gallery at Ryerson University.</p>
-				<p>____________________________</p>
-				<a href="images/NM_tshirt1.png">
-					<span class="image main"><img src="images/NM_tshirt1.png" alt="" /></span></a>
-				<p> Ryerson New Media apparel design.</p>
-				<p>____________________________</p>
-				
-				
-				
-				
-				<a href="images/portfolio_updates2.png">
-					<span class="image main"><img src="images/portfolio_updates2.png" alt="" /></span></a>
-				<p> Poster advertising a student-led event. Branding by Samuel Jacobs.</p>
-				<p>____________________________</p>
-				
-				 <iframe class="vids" src="https://www.youtube.com/embed/SvDcSnX-dqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
-				<p>A motion graphics piece promoting a memoir by Gregory Clark.</p>
-				<p>____________________________</p>
-			<a href="images/hands.png">
-						<span class="image main"><img src="images/hands.png" alt="" /></span></a>
-						<p> Illustration for New Media volunteer tshirts.</p>
-						<p>____________________________</p>
-				<a href="images/MSchoeppich_CDCover.png">
-				<span class="image main"><img src="images/MSchoeppich_CDCover.png" alt="" /></span></a>
-				<p> A class assignment to redesign a CD cover. </p>
-				<p>____________________________</p>
-				 
-				<a href="images/mixer1.png">
-					<span class="image main"><img src="images/mixer1.png" alt="" /></span></a>
-					<p> Posters advertising student-led events.</p>
-					<p>____________________________</p>
-			       
-				
-				<iframe class="vids" src="https://www.youtube.com/embed/ZMuaIlg3bCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<p>A text animation of Shel Silverstein's "Falling Up".</p>
-				<p>____________________________</p>
-				<a href="images/isolation.png">
-					<span class="image main"><img src="images/isolation.png" alt="" /></span></a>
-				<p> Generative illustration made in Processing.</p>
-				<p>____________________________</p>
-				<a href="images/handoverhand3.png">
-				<span class="image main"><img src="images/handoverhand3.png" alt="" /></span></a>
-				<p> Poster design for Project Hard Drive's awareness campaign.</p>
-				<p>____________________________</p>
-			 <a href="images/trip.png">
-		                <span class="image main"><img src="images/trip.png" alt="" /></span></a>
-				<p> An illustration made in photoshop.</p>
-				<p>____________________________</p>
+			<!-- Project Three -->
+      <a class="project-item" target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5eb27a51db4fda32656d35b5e6b93574&auto=format&fit=crop&w=1050&q=80">
+          <figcaption class="project-text">
+            <h2>Project Three</h2>
+            <p>Awesome Development</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
+
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
+
+           <p class='hidden popUpdesc'> PROJECT THREE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
+
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project Three Ends -->
 			
-			<a href="images/flex_poster.png">
-					<span class="image main"><img src="images/flex_poster.png" alt="" /></span></a>
-				<p> The above poster is co-designed with Steve Daniels.</p>
-				<p>____________________________</p>
-			<a href="images/box22.png">
-					<span class="image main"><img src="images/box22.png" alt="" /></span></a>
-					<p>A proposed design for New Media apparel.</p>
-					<p>____________________________</p>
-				<a href="images/gallery15.png">
-					<span class="image main"><img src="images/gallery15.png" alt="" /></span></a>
-			<p>A proposed design for an upcoming student gallery.</p>
-			<p>____________________________</p>
-			<a href="images/NM_supportiveCircuit1.png">
-					<span class="image main"><img src="images/NM_supportiveCircuit1.png" alt="" /></span></a>
-				<p>Designed the instructional assembly document for an LED object. LED object co-designed with Ofir Rosen. </p>
-				<p>____________________________</p>
-				
+			<!-- Project Four -->
+      <a class="project-item" target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1494366222322-387658a1a976?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=24100980ab1a60783e1c847b7965bd11&auto=format&fit=crop&w=1051&q=80">
+          <figcaption class="project-text">
+            <h2>Project Four</h2>
+            <p>Awesome Development</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
 
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
 
+           <p class='hidden popUpdesc'> PROJECT FOUR Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
 
-			</article>
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project Four Ends -->
+			
+			<!-- Project Five -->
+      <a class="project-item" target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1511107898938-65e7577d8fcf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=67e97ce300372131dade414f7ef77661&auto=format&fit=crop&w=1050&q=80">
+          <figcaption class="project-text">
+            <h2>Project Five</h2>
+            <p>Awesome Development</p>
+           <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
 
-			<!-- exhibitions -->
-			<article id="exhibit">
-				<h2 class="major">exhibitions</h2>
-				<a href="images/colab_documentation.png">
-					<span class="image main"><img src="images/colab_documentation.png" alt="" /></span></a>
-				<p>"NODE" is a collaboration with Anneka Muther, Aaron Klem, Neekta Torabian and Caitlyn Fernandez.
-					Node was showcased at the Ontario Science Center from December 14th, 2019 through January 28th, 2020.</p>
-				<p>_____________________________</p>
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
 
-				<a href="images/rubix_documentation1.jpg">
-					<span class="image main"><img src="images/rubix_documentation1.jpg" alt="" /></span></a>
-				<p>I worked as a research assistant with Steve Daniels developing flexible circuitry methods.
-					We showcased our research at <a href="https://www.ryerson.ca/fcad/news/2019/11/rubix/">Ryerson FCAD's RUBIX on November 4th, 2019.</a></p>
-				<p>_____________________________</p>
-				<a href="images/ctl_opening.png">
-					<span class="image main"><img src="images/ctl_opening.png" alt="" /></span></a>
-				<p>Steve Daniels and I demonstrated capabilities of a circuit board printing machine for
-					<a href="https://www.ryerson.ca/fcad/news/2019/11/new-creative-technology-lab-opens-its-doors/">the opening of
-						Ryerson's Creative Technology Lab (CTL) on October 29th, 2019.</a> </p>
-				<p>_____________________________</p>
-				<a href="ctl_documentation.png">
-					<span class="image main"><img src="images/ctl_documentation.png" alt="" /></span></a>
-				<p>As part of the aforementioned research project, Steve Daniels and I featured some resolved circuits in Ryerson's CTL.
-					The contents of the plinth include a robot control board printed on fibreglass,
-					a wearable LED-lit bracelet printed on mylar, and a flexible blinking LED circuit controlled by a touchable switch. Installed on September 11th, 2019. </p>
-				<p>_____________________________</p>
-				<a href="images/makerfest2.png">
-					<span class="image main"><img src="images/makerfest2.png" alt="" /></span></a>
-				<p>I showcased "To Remind", an interactive kinetic sculpture, at Maker Festival on July 7th and 8th, 2018.
+           <p class='hidden popUpdesc'> PROJECT FIVE Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
 
-				</p>
-				<p>_____________________________</p>
-				<a href="images/york_documentation1.png">
-					<span class="image main"><img src="images/york_documentation1.png" alt="" /></span></a>
-				<a href="images/york_documentation2.jpg">
-					<span class="image main"><img src="images/york_documentation2.jpg" alt="" /></span></a>
-				<p>Curated by MOCA director, David Liss, I showcased a multimedia installation in
-					York University's Fine Arts building from November 18th - 27th, 2015.
-				</p>
-				<p>_____________________________</p>
-			</article>
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project Five Ends -->
+			
+			<!-- Project Six -->
+      <a class="project-item" target="_blank">
+        <figure class="project-figure">
+          <div class="project-overlay"></div>
+          <img src="https://images.unsplash.com/photo-1526049997133-25caee4c5796?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4a785d2392ba5c7683a2b09ee1b40b20&auto=format&fit=crop&w=1048&q=80">
+          <figcaption class="project-text">
+            <h2>Project Six</h2>
+            <p>Awesome Development</p>
+          <!-- *********************** -->
+            <!-- START OF HIDDEN ELEMENTS -->
 
-			<!-- Elements -->
-			<article id="elements">
-				<h2 class="major">Elements</h2>
+            <!--  the next 3 element wouldnt display at first sight. they are for the project's popUp as you'll see 
+            HINTS: The P tag next
+            First Anchor tag is for the project's github REPO
+            Second Anchor is for the project's live preview  -->
 
-				<section>
-					<h3 class="major">Text</h3>
-					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-					<hr />
-					<h2>Heading Level 2</h2>
-					<h3>Heading Level 3</h3>
-					<h4>Heading Level 4</h4>
-					<h5>Heading Level 5</h5>
-					<h6>Heading Level 6</h6>
-					<hr />
-					<h4>Blockquote</h4>
-					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus.
-						Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-					<h4>Preformatted</h4>
-					<pre><code>i = 0;
+           <p class='hidden popUpdesc'> PROJECT SIX Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+      <!-- Please don't mind that we have a span with a weird attr. it not displaying so no worries.  -->
+        <span id="githubRepo" href="https://github.com/jabedford"></span>
+        <span id="livePreview" href="https://codiejay.github.io/dict/"></span>
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+      <!-- *********************** -->
+      <!-- END OF HIDDEN ELEMENTS -->
+          </figcaption>
+        </figure>
+			</a>
+			<!-- Project Six Ends -->
+			
+    </div>
+	</section>
+	<!-- Portfolio section ends -->
+	
+	
+	<!-- Contact button section begins -->
+  <section class="content contact">
+    <!-- <a class="button-slide" data-hover="hello@email.com" href="mailto:hello@email.com">
+      <span>Talk To Me 👌</span>
+    </a> -->
+    <div id='form'>
+      <h1>Drop a message below.</h1>
+      <p>And I'll get to you ASAP</p>
+      <form> 
+        <input type="text" placeholder="Your Awesome Name"> 
+        <input type="email" placeholder="Your cool email address">
+        <textArea placeholder="Message here please">
+        </textArea>
+        <div id='buttonDiv'>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+    </section>
+	<!-- Contact button section ends-->
+	
+	<!-- Footer section begins - If you do not want links here, you can change the <li> items to just be <p> tags or whatever you require -->
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li>
+          <a href="https://instagram.com/countryside.coder" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/jamesabedford" target="_blank">Linkedin</a>
+				</li>
+				<li>
+						<a href="https://github.com/jabedford" target="_blank">GitHub</a>
+					</li>
+      </ul>
+    </div>
+	</footer>
+	<!-- Footer section ends -->
+  </main>
+  <!--This section would ONLY appear when an individual project 'box' is clicked, It gives more detail about the project. it contains-- IMAGE OF THE PROJECT, THE PROJECT'S NAME, THE PROJECT FULL DESCRIPTION, GITHUB LINK && PREVIEW LINK -->
+  <div class="popUp">
+    <div class="popUpImg"></div>
+    <div id="popUpText">
+      <h1>Project's Name</h1>
+      <p class="projectDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus non ipsum itaque ratione dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div>
+        <a href="" id="githubLink"></a>
+        <a href="" id="previewLink"></a>
+      </div>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-				</section>
-
-				<section>
-					<h3 class="major">Lists</h3>
-
-					<h4>Unordered</h4>
-					<ul>
-						<li>Dolor pulvinar etiam.</li>
-						<li>Sagittis adipiscing.</li>
-						<li>Felis enim feugiat.</li>
-					</ul>
-
-					<h4>Alternate</h4>
-					<ul class="alt">
-						<li>Dolor pulvinar etiam.</li>
-						<li>Sagittis adipiscing.</li>
-						<li>Felis enim feugiat.</li>
-					</ul>
-
-					<h4>Ordered</h4>
-					<ol>
-						<li>Dolor pulvinar etiam.</li>
-						<li>Etiam vel felis viverra.</li>
-						<li>Felis enim feugiat.</li>
-						<li>Dolor pulvinar etiam.</li>
-						<li>Etiam vel felis lorem.</li>
-						<li>Felis enim et feugiat.</li>
-					</ol>
-					<h4>Icons</h4>
-					<ul class="icons">
-						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-					</ul>
-
-					<h4>Actions</h4>
-					<ul class="actions">
-						<li><a href="#" class="button primary">Default</a></li>
-						<li><a href="#" class="button">Default</a></li>
-					</ul>
-					<ul class="actions stacked">
-						<li><a href="#" class="button primary">Default</a></li>
-						<li><a href="#" class="button">Default</a></li>
-					</ul>
-				</section>
-
-
-
-
-
-				<section>
-					<h3 class="major">Form</h3>
-					<form method="post" action="#">
-						<div class="fields">
-							<div class="field half">
-								<label for="demo-name">Name</label>
-								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-							</div>
-							<div class="field half">
-								<label for="demo-email">Email</label>
-								<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-							</div>
-							<div class="field">
-								<label for="demo-category">Category</label>
-								<select name="demo-category" id="demo-category">
-									<option value="">-</option>
-									<option value="1">Manufacturing</option>
-									<option value="1">Shipping</option>
-									<option value="1">Administration</option>
-									<option value="1">Human Resources</option>
-								</select>
-							</div>
-							<div class="field half">
-								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-								<label for="demo-priority-low">Low</label>
-							</div>
-							<div class="field half">
-								<input type="radio" id="demo-priority-high" name="demo-priority">
-								<label for="demo-priority-high">High</label>
-							</div>
-							<div class="field half">
-								<input type="checkbox" id="demo-copy" name="demo-copy">
-								<label for="demo-copy">Email me a copy</label>
-							</div>
-							<div class="field half">
-								<input type="checkbox" id="demo-human" name="demo-human" checked>
-								<label for="demo-human">Not a robot</label>
-							</div>
-							<div class="field">
-								<label for="demo-message">Message</label>
-								<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" value="Send Message" class="primary" /></li>
-							<li><input type="reset" value="Reset" /></li>
-						</ul>
-					</form>
-				</section>
-
-			</article>
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<p class="copyright"></p>
-		</footer>
-
-	</div>
-
-	<!-- BG -->
-	<div id="bg"></div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    </div>
+    <span id="cancelBtn">X</span>
+  </div>
 </body>
+
 
 </html>
